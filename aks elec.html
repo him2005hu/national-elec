@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>National Electrical Services | Professional Electricians in Ghaziabad</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glow-secondary:hover {
+            box-shadow: 0 0 20px rgba(255, 249, 239, 0.3);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+        .glass-card:hover {
+            border-color: #bec5e5;
+            transform: translateY(-8px);
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+        }
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+        .scroll-reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        @keyframes bounce-slow {
+            0%, 100% { transform: translateY(-5%); }
+            50% { transform: translateY(0); }
+        }
+        .animate-bounce-slow {
+            animation: bounce-slow 2s infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+            animation: marquee 30s linear infinite;
+        }
+        .animate-marquee:hover {
+            animation-play-state: paused;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-on-surface": "#f8fafc",
+                        "on-secondary": "#92400e",
+                        "outline": "#94a3b8",
+                        "surface-container-low": "#f1f5f9",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#7c2d12",
+                        "on-secondary-fixed-variant": "#78350f",
+                        "error": "#b91c1c",
+                        "error-container": "#fecaca",
+                        "surface-bright": "#ffffff",
+                        "surface-container-highest": "#cbd5e1",
+                        "surface-dim": "#e2e8f0",
+                        "on-background": "#0f172a",
+                        "primary-fixed-dim": "#dbeafe",
+                        "inverse-primary": "#93c5fd",
+                        "secondary-fixed": "#fde68a",
+                        "on-error-container": "#7f1d1d",
+                        "on-tertiary-fixed": "#7c2d12",
+                        "on-primary-container": "#1e3a8a",
+                        "surface-container": "#f8fafc",
+                        "primary-container": "#dbeafe",
+                        "on-secondary-container": "#78350f",
+                        "surface-tint": "#93c5fd",
+                        "on-surface-variant": "#475569",
+                        "on-tertiary-container": "#7c2d12",
+                        "on-primary-fixed": "#1e3a8a",
+                        "tertiary-fixed": "#fed7aa",
+                        "inverse-surface": "#0f172a",
+                        "on-secondary-fixed": "#78350f",
+                        "on-surface": "#0f172a",
+                        "tertiary": "#f97316",
+                        "on-tertiary": "#7c2d12",
+                        "background": "#f8fafc",
+                        "surface-variant": "#e2e8f0",
+                        "secondary-fixed-dim": "#fde68a",
+                        "on-primary-fixed-variant": "#1e40af",
+                        "surface": "#ffffff",
+                        "tertiary-container": "#ffedd5",
+                        "tertiary-fixed-dim": "#fed7aa",
+                        "secondary": "#f59e0b",
+                        "surface-container-lowest": "#eff6ff",
+                        "primary": "#2563eb",
+                        "on-error": "#7f1d1d",
+                        "outline-variant": "#cbd5e1",
+                        "surface-container-high": "#e2e8f0",
+                        "primary-fixed": "#eff6ff",
+                        "secondary-container": "#fef3c7"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "container-max": "1280px",
+                        "margin-desktop": "64px",
+                        "section-gap": "120px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Be Vietnam Pro"],
+                        "label-bold": ["Be Vietnam Pro"],
+                        "headline-md": ["Be Vietnam Pro"],
+                        "display-lg": ["Be Vietnam Pro"],
+                        "body-lg": ["Be Vietnam Pro"],
+                        "display-lg-mobile": ["Be Vietnam Pro"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-bold": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full h-[80px] z-50 bg-background/80 backdrop-blur-md border-b border-white/10 shadow-lg flex justify-between items-center px-4 md:px-margin-desktop max-w-container-max mx-auto left-0 right-0">
+<div class="font-display-lg text-headline-md text-primary tracking-tight">National Electrical Services</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-bold text-label-bold text-secondary border-b-2 border-secondary pb-1" href="#home">Home</a>
+<a class="font-label-bold text-label-bold text-on-background hover:text-secondary transition-colors duration-300" href="#services">Services</a>
+<a class="font-label-bold text-label-bold text-on-background hover:text-secondary transition-colors duration-300" href="#about">About</a>
+<a class="font-label-bold text-label-bold text-on-background hover:text-secondary transition-colors duration-300" href="#gallery">Gallery</a>
+<a class="font-label-bold text-label-bold text-on-background hover:text-secondary transition-colors duration-300" href="#reviews">Reviews</a>
+<a class="font-label-bold text-label-bold text-on-background hover:text-secondary transition-colors duration-300" href="#contact">Contact</a>
+</div>
+<a class="bg-primary text-primary-container px-6 py-2 rounded-full font-label-bold transition-all hover:scale-105 active:scale-95 glow-secondary" href="tel:+919354114810">
+        Call Now
+    </a>
+</nav>
+<!-- SideNavBar (Floating Action Group) -->
+<div class="fixed bottom-8 right-8 flex flex-col gap-4 z-50">
+<a class="bg-secondary text-on-secondary rounded-full p-4 shadow-xl hover:scale-110 hover:shadow-secondary/50 transition-transform flex items-center justify-center" href="https://wa.me/919354114810?text=Hello%20National%20Electrical%20Services%2C%20I%27m%20interested%20in%20your%20electrical%20services." target="_blank" title="WhatsApp">
+<span class="material-symbols-outlined">chat</span>
+</a>
+<a class="bg-secondary text-on-secondary rounded-full p-4 shadow-xl hover:scale-110 hover:shadow-secondary/50 transition-transform flex items-center justify-center" href="tel:+919354114810" title="Call">
+<span class="material-symbols-outlined">phone</span>
+</a>
+</div>
+<main>
+<!-- Hero Section -->
+<section class="relative h-screen min-h-[700px] flex items-center overflow-hidden" id="home">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/60 to-transparent z-10"></div>
+<img alt="National Electrical Services Professional at Work" class="w-full h-full object-cover" src="https://i.ibb.co/wF30FFKP/image.png" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns%3D%22http://www.w3.org/2000/svg%22 viewBox%3D%220 0 800 600%22%3E%3Cdefs%3E%3ClinearGradient id%3D%22g%22 x1%3D%220%22 y1%3D%220%22 x2%3D%221%22 y2%3D%221%22%3E%3Cstop offset%3D%220%25%22 stop-color%3D%22%23f59e0b%22 /%3E%3Cstop offset%3D%22100%25%22 stop-color%3D%22%230ea5e9%22 /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width%3D%22800%22 height%3D%22600%22 fill%3D%22url(%23g)%22 /%3E%3Ctext x%3D%2250%25%22 y%3D%2245%25%22 dominant-baseline%3D%22middle%22 text-anchor%3D%22middle%22 font-family%3D%22Arial%2C%20sans-serif%22 font-size%3D%2236%22 fill%3D%22%23ffffff%22%3ENational%20Electrical%3C/text%3E%3Ctext x%3D%2250%25%22 y%3D%2260%25%22 dominant-baseline%3D%22middle%22 text-anchor%3D%22middle%22 font-family%3D%22Arial%2C%20sans-serif%22 font-size%3D%2224%22 fill%3D%22%23ffffff%22%3EImage%20Unavailable%3C/text%3E%3C/svg%3E';"/>
+</div>
+<div class="relative z-20 px-4 md:px-margin-desktop max-w-container-max mx-auto w-full">
+<div class="max-w-2xl scroll-reveal">
+<span class="inline-block px-4 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-bold text-xs uppercase tracking-widest mb-6">Expert Solutions Ghaziabad</span>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-background mb-6 leading-tight">
+                    Professional Electrical Services for <span class="text-primary">Homes &amp; Businesses</span>
+</h1>
+<p class="text-on-surface-variant font-body-lg mb-10 max-w-xl">
+                    Powering Homes &amp; Businesses with Safe Electrical Solutions. We provide reliable, affordable, and safe electrical services in Ghaziabad, UP.
+                </p>
+<div class="flex flex-wrap gap-4">
+<a class="flex items-center gap-2 bg-primary text-primary-container font-label-bold py-4 px-8 rounded-full transition-all hover:scale-105 hover:shadow-[0_0_20px_rgba(190,197,229,0.4)]" href="tel:+919354114810">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">phone</span>
+                        Call Now
+                    </a>
+<a class="flex items-center gap-2 border-2 border-secondary text-secondary font-label-bold py-4 px-8 rounded-full transition-all hover:bg-secondary hover:text-on-secondary" href="https://wa.me/919354114810?text=Hello%20National%20Electrical%20Services%2C%20I%27m%20interested%20in%20your%20electrical%20services." target="_blank">
+<span class="material-symbols-outlined">chat</span>
+                        WhatsApp Now
+                    </a>
+</div>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-on-surface-variant animate-bounce-slow opacity-50">
+<span class="text-xs uppercase tracking-widest font-label-bold">Explore</span>
+<span class="material-symbols-outlined">keyboard_double_arrow_down</span>
+</div>
+</section>
+<!-- About Us Section -->
+<section class="py-section-gap px-4 md:px-margin-desktop max-w-container-max mx-auto" id="about">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter items-center">
+<div class="order-2 lg:order-1 scroll-reveal">
+<div class="relative rounded-2xl overflow-hidden shadow-2xl group">
+<img alt="24/7 Professional Electrical Experts in Ghaziabad" class="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-110 mx-auto block" src="https://i.ibb.co/bj1bm5L9/image.png" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22%3E%3Cdefs%3E%3ClinearGradient id%3D%22g%22 x1%3D%220%22 y1%3D%220%22 x2%3D%221%22 y2%3D%221%22%3E%3Cstop offset%3D%220%25%22 stop-color%3D%22%23f59e0b%22 /%3E%3Cstop offset%3D%22100%25%22 stop-color%3D%22%230ea5e9%22 /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width%3D%22800%22 height%3D%22600%22 fill%3D%22url(%23g)%22 /%3E%3Ctext x%3D%2250%25%22 y%3D%2245%25%22 dominant-baseline%3D%22middle%22 text-anchor%3D%22middle%22 font-family%3D%22Arial%2C%20sans-serif%22 font-size%3D%2236%22 fill%3D%22%23ffffff%22%3ENational%20Electrical%3C/text%3E%3Ctext x%3D%2250%25%22 y%3D%2260%25%22 dominant-baseline%3D%22middle%22 text-anchor%3D%22middle%22 font-family%3D%22Arial%2C%20sans-serif%22 font-size%3D%2224%22 fill%3D%22%23ffffff%22%3EImage%20Unavailable%3C/text%3E%3C/svg%3E';"/>
+<div class="absolute inset-0 ring-1 ring-white/10 ring-inset"></div>
+</div>
+</div>
+<div class="order-1 lg:order-2 space-y-8 scroll-reveal">
+<h2 class="text-primary font-display-lg text-headline-md md:text-display-lg leading-tight">24/7 Professional Electrical Experts in Ghaziabad.</h2>
+<p class="font-body-lg text-on-surface-variant">
+                    Our commitment to safety and quality ensures peace of mind for every client. With years of experience serving both residential and commercial sectors, National Electrical Services has built a reputation for excellence, precision, and rapid response.
+                </p>
+<div class="grid grid-cols-2 gap-4">
+<div class="glass-card p-6 rounded-xl">
+<div class="text-primary font-display-lg mb-2">10+</div>
+<div class="text-on-surface-variant font-label-bold">Years Experience</div>
+</div>
+<div class="glass-card p-6 rounded-xl">
+<div class="text-primary font-display-lg mb-2">2k+</div>
+<div class="text-on-surface-variant font-label-bold">Happy Clients</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Services Section -->
+<section class="py-section-gap bg-surface-container-lowest" id="services">
+<div class="px-4 md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-16 scroll-reveal">
+<h2 class="font-display-lg text-headline-md md:text-display-lg text-on-background mb-4">Our Premium Services</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">From minor repairs to major industrial installations, we handle every electrical challenge with surgical precision.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 scroll-reveal">
+<!-- Service Cards -->
+<div class="glass-card rounded-xl flex flex-col">
+<div class="h-48 overflow-hidden">
+<img alt="House Wiring" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" src="https://i.ibb.co/vvqWWjr6/image.png" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%3D%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22%3E%3Cdefs%3E%3ClinearGradient id%3D%22g%22 x1%3D%220%22 y1%3D%220%22 x2%3D%221%22 y2%3D%221%22%3E%3Cstop offset%3D%220%25%22 stop-color%3D%22%23f59e0b%22 /%3E%3Cstop offset%3D%22100%25%22 stop-color%3D%22%230ea5e9%22 /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width%3D%22800%22 height%3D%22600%22 fill%3D%22url(%23g)%22 /%3E%3Ctext x%3D%2250%25%22 y%3D%2245%25%22 dominant-baseline%3D%22middle%22 text-anchor%3D%22middle%22 font-family%3D%22Arial%2C%20sans-serif%22 font-size%3D%2236%22 fill%3D%22%23ffffff%22%3ENational%20Electrical%3C/text%3E%3Ctext x%3D%2250%25%22 y%3D%2260%25%22 dominant-baseline%3D%22middle%22 text-anchor%3D%22middle%22 font-family%3D%22Arial%2C%20sans-serif%22 font-size%3D%2224%22 fill%3D%22%23ffffff%22%3EImage%20Unavailable%3C/text%3E%3C/svg%3E';"/>
+</div>
+<div class="p-6 flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<h3 class="font-headline-md text-lg text-secondary">House Wiring</h3>
+</div>
+<p class="text-on-surface-variant text-sm">Full premise wiring and structured cabling for modern smart homes.</p>
+</div>
+</div>
+<div class="glass-card rounded-xl flex flex-col">
+<div class="h-48 overflow-hidden">
+<img alt="Electrical Repair" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" src="https://i.ibb.co/v4mF0kgT/image.png" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%3D%22http://www.w3.org/2000/svg%22 viewBox%3D%220 0 800 600%22%3E%3Cdefs%3E%3ClinearGradient id%3D%22g%22 x1%3D%220%22 y1%3D%220%22 x2%3D%221%22 y2%3D%221%22%3E%3Cstop offset%3D%220%25%22 stop-color%3D%22%23f59e0b%22 /%3E%3Cstop offset%3D%22100%25%22 stop-color%3D%22%230ea5e9%22 /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width%3D%22800%22 height%3D%22600%22 fill%3D%22url(%23g)%22 /%3E%3Ctext x%3D%2250%25%22 y%3D%2245%25%22 dominant-baseline%3D%22middle%22 text-anchor%3D%22middle%22 font-family%3D%22Arial%2C%20sans-serif%22 font-size%3D%2236%22 fill%3D%22%23ffffff%22%3ENational%20Electrical%3C/text%3E%3Ctext x%3D%2250%25%22 y%3D%2260%25%22 dominant-baseline%3D%22middle%22 text-anchor%3D%22middle%22 font-family%3D%22Arial%2C%20sans-serif%22 font-size%3D%2224%22 fill%3D%22%23ffffff%22%3EImage%20Unavailable%3C/text%3E%3C/svg%3E';"/>
+</div>
+<div class="p-6 flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl" style="font-variation-settings: 'FILL' 1;">build</span>
+<h3 class="font-headline-md text-lg text-secondary">Electrical Repair</h3>
+</div>
+<p class="text-on-surface-variant text-sm">Expert troubleshooting and fixing of any electrical faults or sparks.</p>
+</div>
+</div>
+<div class="glass-card rounded-xl flex flex-col">
+<div class="h-48 overflow-hidden">
+<img alt="Fan Installation" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" src="https://i.ibb.co/Z6J65HDd/image.png" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%3D%22http://www.w3.org/2000/svg%22 viewBox%3D%220 0 800 600%22%3E%3Cdefs%3E%3ClinearGradient id%3D%22g%22 x1%3D%220%22 y1%3D%220%22 x2%3D%221%22 y2%3D%221%22%3E%3Cstop offset%3D%220%25%22 stop-color%3D%22%23f59e0b%22 /%3E%3Cstop offset%3D%22100%25%22 stop-color%3D%22%230ea5e9%22 /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width%3D%22800%22 height%3D%22600%22 fill%3D%22url(%23g)%22 /%3E%3Ctext x%3D%2250%25%22 y%3D%2245%25%22 dominant-baseline%3D%22middle%22 text-anchor%3D%22middle%22 font-family%3D%22Arial%2C%20sans-serif%22 font-size%3D%2236%22 fill%3D%22%23ffffff%22%3ENational%20Electrical%3C/text%3E%3Ctext x%3D%2250%25%22 y%3D%2260%25%22 dominant-baseline%3D%22middle%22 text-anchor%3D%22middle%22 font-family%3D%22Arial%2C%20sans-serif%22 font-size%3D%2224%22 fill%3D%22%23ffffff%22%3EImage%20Unavailable%3C/text%3E%3C/svg%3E';"/>
+</div>
+<div class="p-6 flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl" style="font-variation-settings: 'FILL' 1;">mode_fan</span>
+<h3 class="font-headline-md text-lg text-secondary">Fan Installation</h3>
+</div>
+<p class="text-on-surface-variant text-sm">Ceiling and exhaust fan installation with proper weight-bearing checks.</p>
+</div>
+</div>
+<div class="glass-card rounded-xl flex flex-col">
+<div class="h-48 overflow-hidden">
+<img alt="LED Light Installation" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" src="https://i.ibb.co/KPMwm3y/image.png" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%3D%22http://www.w3.org/2000/svg%22 viewBox%3D%220 0 800 600%22%3E%3Cdefs%3E%3ClinearGradient id%3D%22g%22 x1%3D%220%22 y1%3D%220%22 x2%3D%221%22 y2%3D%221%22%3E%3Cstop offset%3D%220%25%22 stop-color%3D%22%23f59e0b%22 /%3E%3Cstop offset%3D%22100%25%22 stop-color%3D%22%230ea5e9%22 /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width%3D%22800%22 height%3D%22600%22 fill%3D%22url(%23g)%22 /%3E%3Ctext x%3D%2250%25%22 y%3D%2245%25%22 dominant-baseline%3D%22middle%22 text-anchor%3D%22middle%22 font-family%3D%22Arial%2C%20sans-serif%22 font-size%3D%2236%22 fill%3D%22%23ffffff%22%3ENational%20Electrical%3C/text%3E%3Ctext x%3D%2250%25%22 y%3D%2260%25%22 dominant-baseline%3D%22middle%22 text-anchor%3D%22middle%22 font-family%3D%22Arial%2C%20sans-serif%22 font-size%3D%2224%22 fill%3D%22%23ffffff%22%3EImage%20Unavailable%3C/text%3E%3C/svg%3E';"/>
+</div>
+<div class="p-6 flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl" style="font-variation-settings: 'FILL' 1;">lightbulb</span>
+<h3 class="font-headline-md text-lg text-secondary">LED Light Installation</h3>
+</div>
+<p class="text-on-surface-variant text-sm">Ambient lighting solutions and energy-efficient LED upgrades.</p>
+</div>
+</div>
+<div class="glass-card rounded-xl flex flex-col">
+<div class="h-48 overflow-hidden">
+<img alt="Switch Board Repair" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" src="https://i.ibb.co/wrMfzVFz/image.png" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%3D%22http://www.w3.org/2000/svg%22 viewBox%3D%220 0 800 600%22%3E%3Cdefs%3E%3ClinearGradient id%3D%22g%22 x1%3D%220%22 y1%3D%220%22 x2%3D%221%22 y2%3D%221%22%3E%3Cstop offset%3D%220%25%22 stop-color%3D%22%23f59e0b%22 /%3E%3Cstop offset%3D%22100%25%22 stop-color%3D%22%230ea5e9%22 /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width%3D%22800%22 height%3D%22600%22 fill%3D%22url(%23g)%22 /%3E%3Ctext x%3D%2250%25%22 y%3D%2245%25%22 dominant-baseline%3D%22middle%22 text-anchor%3D%22middle%22 font-family%3D%22Arial%2C%20sans-serif%22 font-size%3D%2236%22 fill%3D%22%23ffffff%22%3ENational%20Electrical%3C/text%3E%3Ctext x%3D%2250%25%22 y%3D%2260%25%22 dominant-baseline%3D%22middle%22 text-anchor%3D%22middle%22 font-family%3D%22Arial%2C%20sans-serif%22 font-size%3D%2224%22 fill%3D%22%23ffffff%22%3EImage%20Unavailable%3C/text%3E%3C/svg%3E';"/>
+</div>
+<div class="p-6 flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl" style="font-variation-settings: 'FILL' 1;">toggle_on</span>
+<h3 class="font-headline-md text-lg text-secondary">Switch Board Repair</h3>
+</div>
+<p class="text-on-surface-variant text-sm">Repairing burned terminals and updating old switchgear.</p>
+</div>
+</div>
+<div class="glass-card rounded-xl flex flex-col">
+<div class="h-48 overflow-hidden">
+<img alt="MCB Installation" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" src="https://i.ibb.co/Fb57WTzp/image.png" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%3D%22http://www.w3.org/2000/svg%22 viewBox%3D%220 0 800 600%22%3E%3Cdefs%3E%3ClinearGradient id%3D%22g%22 x1%3D%220%22 y1%3D%220%22 x2%3D%221%22 y2%3D%221%22%3E%3Cstop offset%3D%220%25%22 stop-color%3D%22%23f59e0b%22 /%3E%3Cstop offset%3D%22100%25%22 stop-color%3D%22%230ea5e9%22 /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width%3D%22800%22 height%3D%22600%22 fill%3D%22url(%23g)%22 /%3E%3Ctext x%3D%2250%25%22 y%3D%2245%25%22 dominant-baseline%3D%22middle%22 text-anchor%3D%22middle%22 font-family%3D%22Arial%2C%20sans-serif%22 font-size%3D%2236%22 fill%3D%22%23ffffff%22%3ENational%20Electrical%3C/text%3E%3Ctext x%3D%2250%25%22 y%3D%2260%25%22 dominant-baseline%3D%22middle%22 text-anchor%3D%22middle%22 font-family%3D%22Arial%2C%20sans-serif%22 font-size%3D%2224%22 fill%3D%22%23ffffff%22%3EImage%20Unavailable%3C/text%3E%3C/svg%3E';"/>
+</div>
+<div class="p-6 flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl" style="font-variation-settings: 'FILL' 1;">settings_input_component</span>
+<h3 class="font-headline-md text-lg text-secondary">MCB Installation</h3>
+</div>
+<p class="text-on-surface-variant text-sm">Safety-first circuit breaker installation to protect your home.</p>
+</div>
+</div>
+<div class="glass-card rounded-xl flex flex-col">
+<div class="h-48 overflow-hidden">
+<img alt="Inverter Installation" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" src="https://i.ibb.co/fGSJ4hL2/image.png" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%3D%22http://www.w3.org/2000/svg%22 viewBox%3D%220 0 400 300%22%3E%3Crect width%3D%22400%22 height%3D%22300%22 fill%3D%22%23075a8d%22/%3E%3Ctext x%3D%22200%22 y%3D%22150%22 fill%3D%22%23fff%22 font-size%3D%2224%22 text-anchor%3D%22middle%22 dominant-baseline%3D%22middle%22%3EImage Unavailable%3C/text%3E%3C/svg%3E';"/>
+</div>
+<div class="p-6 flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl" style="font-variation-settings: 'FILL' 1;">battery_charging_full</span>
+<h3 class="font-headline-md text-lg text-secondary">Inverter Installation</h3>
+</div>
+<p class="text-on-surface-variant text-sm">Setup and maintenance of power backup systems for uninterrupted life.</p>
+</div>
+</div>
+<div class="glass-card rounded-xl flex flex-col">
+<div class="h-48 overflow-hidden">
+<img alt="Water Motor Repair" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" src="https://i.ibb.co/JwD27jZk/image.png" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%3D%22http://www.w3.org/2000/svg%22 viewBox%3D%220 0 400 300%22%3E%3Crect width%3D%22400%22 height%3D%22300%22 fill%3D%22%23075a8d%22/%3E%3Ctext x%3D%22200%22 y%3D%22150%22 fill%3D%22%23fff%22 font-size%3D%2224%22 text-anchor%3D%22middle%22 dominant-baseline%3D%22middle%22%3EImage Unavailable%3C/text%3E%3C/svg%3E';"/>
+</div>
+<div class="p-6 flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl" style="font-variation-settings: 'FILL' 1;">water_drop</span>
+<h3 class="font-headline-md text-lg text-secondary">Water Motor Repair</h3>
+</div>
+<p class="text-on-surface-variant text-sm">Internal winding and capacitor replacement for water pumps.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us -->
+<section class="py-section-gap px-4 md:px-margin-desktop max-w-container-max mx-auto overflow-hidden">
+<div class="flex flex-col lg:flex-row gap-16 items-center">
+<div class="w-full lg:w-1/2 scroll-reveal">
+<h2 class="font-display-lg text-headline-md md:text-display-lg text-on-background mb-8">Why Trust National Electrical Services?</h2>
+<div class="space-y-6">
+<div class="flex gap-6 items-start">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">engineering</span>
+</div>
+<div>
+<h4 class="font-headline-md text-secondary mb-1">Experienced Electricians</h4>
+<p class="text-on-surface-variant">Verified professionals with deep technical expertise in complex circuitry.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">currency_rupee</span>
+</div>
+<div>
+<h4 class="font-headline-md text-secondary mb-1">Affordable Pricing</h4>
+<p class="text-on-surface-variant">Transparent quotes with no hidden costs for every single project.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">schedule</span>
+</div>
+<div>
+<h4 class="font-headline-md text-secondary mb-1">24x7 Emergency Support</h4>
+<p class="text-on-surface-variant">Electrical emergencies don't wait, and neither do we. Rapid response guaranteed.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full lg:w-1/2 relative scroll-reveal">
+<div class="aspect-square bg-primary-container/20 rounded-full blur-3xl absolute -z-10 w-full h-full"></div>
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-4 pt-12">
+<div class="rounded-2xl overflow-hidden aspect-[3/4]">
+<img alt="Skilled electrician working" class="w-full h-full object-cover" src="https://i.ibb.co/zW6wKX0y/image.png" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23075a8d%22/%3E%3Ctext x=%22200%22 y=%22150%22 fill=%22%23fff%22 font-size=%2224%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3EImage Unavailable%3C/text%3E%3C/svg%3E';"/>
+</div>
+<div class="rounded-2xl overflow-hidden aspect-square">
+<img alt="Trusted instant service" class="w-full h-full object-cover" src="https://i.ibb.co/6cX56Hf3/image.png" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23075a8d%22/%3E%3Ctext x=%22200%22 y=%22150%22 fill=%22%23fff%22 font-size=%2224%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3EImage Unavailable%3C/text%3E%3C/svg%3E';"/>
+</div>
+</div>
+<div class="space-y-4">
+<div class="rounded-2xl overflow-hidden aspect-square">
+<img alt="Electrical safety inspection" class="w-full h-full object-cover" src="https://i.ibb.co/d4WPnkRd/image.png" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23075a8d%22/%3E%3Ctext x=%22200%22 y=%22150%22 fill=%22%23fff%22 font-size=%2224%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3EImage Unavailable%3C/text%3E%3C/svg%3E';"/>
+</div>
+<div class="bg-primary p-8 rounded-2xl flex flex-col justify-end min-h-[200px]">
+<span class="material-symbols-outlined text-primary-container text-5xl mb-4">verified</span>
+<p class="text-primary-container font-headline-md leading-tight">ISO Standard Quality Checks</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Project Gallery Section -->
+<section class="py-section-gap overflow-hidden bg-surface-container-low" id="gallery">
+<div class="px-4 md:px-margin-desktop max-w-container-max mx-auto mb-16 scroll-reveal text-center">
+<h2 class="font-display-lg text-headline-md md:text-display-lg text-on-background mb-4">Project Gallery</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Witness the precision of our electrical craftsmanship across various industrial and residential sites.</p>
+</div>
+<div class="relative flex overflow-hidden group">
+<div class="flex animate-marquee gap-6 whitespace-nowrap py-4">
+<!-- Gallery Set 1 -->
+<div class="flex gap-6 shrink-0">
+<img alt="Project: industrial panel" class="w-[400px] h-[300px] object-cover rounded-2xl border border-white/10 hover:border-primary transition-colors cursor-pointer" src="https://i.ibb.co/CpKJTkmz/image.png" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23075a8d%22/%3E%3Ctext x=%22200%22 y=%22150%22 fill=%22%23fff%22 font-size=%2224%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3EImage Unavailable%3C/text%3E%3C/svg%3E';"/>
+<img alt="Project: house wiring" class="w-[400px] h-[300px] object-cover rounded-2xl border border-white/10 hover:border-primary transition-colors cursor-pointer" src="https://i.ibb.co/WWGNZJN3/image.png" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23075a8d%22/%3E%3Ctext x=%22200%22 y=%22150%22 fill=%22%23fff%22 font-size=%2224%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3EImage Unavailable%3C/text%3E%3C/svg%3E';"/>
+<img alt="Project: LED installation" class="w-[400px] h-[300px] object-cover rounded-2xl border border-white/10 hover:border-primary transition-colors cursor-pointer" src="https://i.ibb.co/vxC8wQ8Z/image.png" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23075a8d%22/%3E%3Ctext x=%22200%22 y=%22150%22 fill=%22%23fff%22 font-size=%2224%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3EImage Unavailable%3C/text%3E%3C/svg%3E';"/>
+<img alt="Project: inverter system" class="w-[400px] h-[300px] object-cover rounded-2xl border border-white/10 hover:border-primary transition-colors cursor-pointer" src="https://i.ibb.co/C3Smxjcg/image.png" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23075a8d%22/%3E%3Ctext x=%22200%22 y=%22150%22 fill=%22%23fff%22 font-size=%2224%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3EImage Unavailable%3C/text%3E%3C/svg%3E';"/>
+<img alt="Project: circuit breaker" class="w-[400px] h-[300px] object-cover rounded-2xl border border-white/10 hover:border-primary transition-colors cursor-pointer" src="https://i.ibb.co/QjXn0nDs/image.png" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23075a8d%22/%3E%3Ctext x=%22200%22 y=%22150%22 fill=%22%23fff%22 font-size=%2224%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3EImage Unavailable%3C/text%3E%3C/svg%3E';"/>
+</div>
+<!-- Duplicate for Seamless Marquee -->
+<div class="flex gap-6 shrink-0">
+<img alt="Project: industrial panel" class="w-[400px] h-[300px] object-cover rounded-2xl border border-white/10 hover:border-primary transition-colors cursor-pointer" src="https://i.ibb.co/1GKPM6PG/image.png" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23075a8d%22/%3E%3Ctext x=%22200%22 y=%22150%22 fill=%22%23fff%22 font-size=%2224%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3EImage Unavailable%3C/text%3E%3C/svg%3E';"/>
+<img alt="Project: house wiring" class="w-[400px] h-[300px] object-cover rounded-2xl border border-white/10 hover:border-primary transition-colors cursor-pointer" src="https://i.ibb.co/yng65NZr/image.png" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23075a8d%22/%3E%3Ctext x=%22200%22 y=%22150%22 fill=%22%23fff%22 font-size=%2224%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3EImage Unavailable%3C/text%3E%3C/svg%3E';"/>
+<img alt="Project: LED installation" class="w-[400px] h-[300px] object-cover rounded-2xl border border-white/10 hover:border-primary transition-colors cursor-pointer" src="https://i.ibb.co/CpKJTkmz/image.png" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23075a8d%22/%3E%3Ctext x=%22200%22 y=%22150%22 fill=%22%23fff%22 font-size=%2224%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3EImage Unavailable%3C/text%3E%3C/svg%3E';"/>
+<img alt="Project: inverter system" class="w-[400px] h-[300px] object-cover rounded-2xl border border-white/10 hover:border-primary transition-colors cursor-pointer" src="https://i.ibb.co/WWGNZJN3/image.png" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23075a8d%22/%3E%3Ctext x=%22200%22 y=%22150%22 fill=%22%23fff%22 font-size=%2224%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3EImage Unavailable%3C/text%3E%3C/svg%3E';"/>
+<img alt="Project: circuit breaker" class="w-[400px] h-[300px] object-cover rounded-2xl border border-white/10 hover:border-primary transition-colors cursor-pointer" src="https://i.ibb.co/vxC8wQ8Z/image.png" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23075a8d%22/%3E%3Ctext x=%22200%22 y=%22150%22 fill=%22%23fff%22 font-size=%2224%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3EImage Unavailable%3C/text%3E%3C/svg%3E';"/>
+</div>
+</div>
+<!-- Overlay Gradients -->
+<div class="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-surface-container-low to-transparent z-10"></div>
+<div class="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-surface-container-low to-transparent z-10"></div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-section-gap bg-surface-container" id="reviews">
+<div class="px-4 md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-16 scroll-reveal">
+<h2 class="font-display-lg text-headline-md md:text-display-lg text-on-background mb-4">What Our Clients Say</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter scroll-reveal">
+<div class="glass-card p-8 rounded-2xl">
+<div class="flex text-tertiary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-background mb-6">"Highly professional service. They fixed my industrial circuit panel in record time. Best electrician in Ghaziabad."</p>
+<div class="font-label-bold text-primary">Vikram Sharma</div>
+<div class="text-xs text-on-surface-variant uppercase tracking-widest">Business Owner</div>
+</div>
+<div class="glass-card p-8 rounded-2xl border-primary/30 bg-primary-container/10">
+<div class="flex text-tertiary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-background mb-6">"Extremely happy with the home wiring they did. Clean, organized, and very polite. Highly recommended for residential work."</p>
+<div class="font-label-bold text-primary">Anjali Gupta</div>
+<div class="text-xs text-on-surface-variant uppercase tracking-widest">Homeowner</div>
+</div>
+<div class="glass-card p-8 rounded-2xl">
+<div class="flex text-tertiary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-background mb-6">"Excellent inverter setup. They explained everything clearly and the pricing was exactly what they quoted."</p>
+<div class="font-label-bold text-primary">Rajesh Kumar</div>
+<div class="text-xs text-on-surface-variant uppercase tracking-widest">Local Resident</div>
+</div>
+</div>
+</div>
+
+<section class="py-section-gap px-4 md:px-margin-desktop max-w-container-max mx-auto" id="contact">
+    <div class="max-w-3xl mx-auto space-y-8">
+        <div class="text-center space-y-4">
+            <p class="text-xs uppercase tracking-widest font-label-bold text-secondary">Contact</p>
+            <h2 class="text-display-lg text-on-background leading-tight">Get a WhatsApp quote in minutes</h2>
+            <p class="text-on-surface-variant">Share your name, phone, service, and issue. We'll send the next steps directly on WhatsApp.</p>
+        </div>
+        <div class="rounded-[2rem] bg-background border border-white/10 p-8 shadow-xl">
+            <form class="space-y-6" id="whatsappForm">
+                <div class="space-y-2">
+                    <label class="text-xs uppercase tracking-widest font-label-bold text-on-surface-variant">Full Name</label>
+                    <input class="w-full bg-surface border border-surface-container-high rounded-2xl px-6 py-4 focus:ring-2 focus:ring-secondary focus:border-secondary transition-all outline-none" id="name" required type="text" placeholder="Your name" />
+                </div>
+                <div class="space-y-2">
+                    <label class="text-xs uppercase tracking-widest font-label-bold text-on-surface-variant">Phone Number</label>
+                    <input class="w-full bg-surface border border-surface-container-high rounded-2xl px-6 py-4 focus:ring-2 focus:ring-secondary focus:border-secondary transition-all outline-none" id="phone" required type="tel" placeholder="Mobile number" />
+                </div>
+                <div class="space-y-2">
+                    <label class="text-xs uppercase tracking-widest font-label-bold text-on-surface-variant">Service</label>
+                    <select class="w-full bg-surface border border-surface-container-high rounded-2xl px-6 py-4 focus:ring-2 focus:ring-secondary focus:border-secondary transition-all outline-none" id="service" required>
+                        <option value="">Choose your service</option>
+                        <option value="House Wiring">House Wiring</option>
+                        <option value="Electrical Repair">Electrical Repair</option>
+                        <option value="LED Light Installation">LED Light Installation</option>
+                        <option value="Inverter Installation">Inverter Installation</option>
+                        <option value="MCB Installation">MCB Installation</option>
+                        <option value="Fan Installation">Fan Installation</option>
+                        <option value="Switch Board Repair">Switch Board Repair</option>
+                        <option value="Water Motor Repair">Water Motor Repair</option>
+                    </select>
+                </div>
+                <div class="space-y-2">
+                    <label class="text-xs uppercase tracking-widest font-label-bold text-on-surface-variant">Message</label>
+                    <textarea class="w-full bg-surface border border-surface-container-high rounded-2xl px-6 py-4 focus:ring-2 focus:ring-secondary focus:border-secondary transition-all outline-none" id="message" required rows="4" placeholder="Describe your issue"></textarea>
+                </div>
+                <button class="w-full bg-primary text-primary-container font-label-bold py-5 rounded-2xl transition-all hover:bg-secondary hover:text-on-secondary" type="submit">Send Request via WhatsApp</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+</main>
+<!-- Footer -->
+<footer class="bg-background border-t border-white/10 w-full py-12">
+    <div class="max-w-container-max mx-auto px-4 md:px-margin-desktop">
+        <div class="flex flex-col lg:flex-row items-start justify-between gap-8">
+            <div class="max-w-xl">
+                <div class="font-display-lg text-headline-md text-primary mb-4">National Electrical Services</div>
+                <p class="text-on-surface-variant text-body-md">Reliable electrical service across Ghaziabad. Fast WhatsApp support, clear estimates, and trusted electricians.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full lg:w-auto">
+                <div>
+                    <p class="font-label-bold text-secondary uppercase tracking-widest text-xs mb-4">Services</p>
+                    <ul class="space-y-3 text-on-surface-variant text-sm">
+                        <li>Residential</li>
+                        <li>Commercial</li>
+                        <li>Industrial</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-label-bold text-secondary uppercase tracking-widest text-xs mb-4">Connect</p>
+                    <ul class="space-y-3 text-on-surface-variant text-sm">
+                        <li><a class="hover:text-secondary transition-colors" href="https://wa.me/919354114810?text=Hello%20National%20Electrical%20Services.%20I%20need%20a%20quote.">WhatsApp</a></li>
+                        <li><a class="hover:text-secondary transition-colors" href="tel:+919354114810">+91 93541 14810</a></li>
+                        <li><a class="hover:text-secondary transition-colors" href="mailto:aks935411@gmail.com">aks935411@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-label-bold text-secondary uppercase tracking-widest text-xs mb-4">Address</p>
+                    <p class="text-on-surface-variant text-sm">Prem Vihar, Khora Colony, Ghaziabad, UP 201309</p>
+                </div>
+            </div>
+        </div>
+        <div class="mt-10 pt-8 border-t border-white/10 text-center text-on-surface-variant/60 text-sm">
+            © 2024 National Electrical Services. All rights reserved.
+        </div>
+    </div>
+</footer>
+<script>
+    // Form Logic
+    const whatsappForm = document.getElementById('whatsappForm');
+    if (whatsappForm) {
+        whatsappForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const service = document.getElementById('service').value;
+            const shortMsg = document.getElementById('shortMessage') ? document.getElementById('shortMessage').value : '';
+            const message = document.getElementById('message').value;
+
+            const waText = `Hello National Electrical Services, ${shortMsg ? `Quick Note: ${shortMsg}. ` : ''}I would like a quote for ${service}. My Name: ${name}, Phone: ${phone}. Details: ${message}.`;
+            const waUrl = `https://wa.me/919354114810?text=${encodeURIComponent(waText)}`;
+            
+            window.open(waUrl, '_blank');
+        });
+    }
+
+    // Scroll Reveal Intersection Observer
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
+
+    // Header Scroll Effect
+    window.addEventListener('scroll', () => {
+        const nav = document.querySelector('nav');
+        if (window.scrollY > 50) {
+            nav.classList.add('bg-background', 'shadow-2xl');
+            nav.classList.remove('bg-background/80');
+        } else {
+            nav.classList.remove('bg-background', 'shadow-2xl');
+            nav.classList.add('bg-background/80');
+        }
+    });
+</script>
+</body></html>
